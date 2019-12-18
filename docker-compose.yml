@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  bootdocker-be:
+    image: edo/bootdocker:1.0
+    build:
+      context: ./
+      dockerfile: dockerfile
+    ports: 
+      - "8080:8080"
+    restart: always
